@@ -1,10 +1,9 @@
 {
-  "name": "recast.ly",
+  "name": "Hannah & Sunit's App",
   "version": "1.1.0",
-  "description": "Making YouTube with React and ES6",
-  "author": "Hack Reactor <curriculum.team@hackreactor.com>",
+  "description": "our 1st app",
+  "author": "Hannah & Sunit",
   "license": "UNLICENSED",
-  "private": true,
   "scripts": {
     "test": "live-server --open=./SpecRunner.html --port=8081",
     "postinstall": "curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/install | bash"
