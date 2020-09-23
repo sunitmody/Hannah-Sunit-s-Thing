@@ -1,12 +1,18 @@
-var StateList = () => (
-  <div className="video-list">
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
-  </div>
-);
+var StateList = (props) => {
+
+  if (props.states === undefined || props.states.length === 0) {
+    return (<div className="state-list"></div>);
+  }
+
+  return (
+    <div className="state-list">
+      {props.states.map((state, index) => {
+        <StateListEntry key={index} state={state}/>;
+      })
+      }
+    </div>
+  );
+};
 
 // PropTypes tell other developers what `props` a component expects
 // Warnings will be shown in the console when the defined rules are violated
@@ -20,3 +26,6 @@ export default StateList;
 
 //Functional Stateless:
 //responsibility: returns instances of stateListEntries
+
+//use map to iterate over the fake data array
+//map one state obj to each stateListEntry (pass the state to the component instance as a prop)
