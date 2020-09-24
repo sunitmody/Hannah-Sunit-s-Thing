@@ -1,8 +1,6 @@
 // : Render the `App` component to the DOM
 import App from './components/App.js';
-// import data from './data';
-const mockData = require('./data');
+import data from './data/exampleStateData.js';
+// const mockData = require('./data');
 
-console.log('hello look here:', mockData);
-
-ReactDOM.render(<App states={mockData}/>, document.getElementById('app'));
+ReactDOM.render(<App states={data}/>, document.getElementById('app'));

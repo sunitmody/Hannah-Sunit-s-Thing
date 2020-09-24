@@ -1,3 +1,5 @@
+import StateListEntry from './StateListEntry.js';
+
 var StateList = (props) => {
 
   if (props.states === undefined || props.states.length === 0) {
@@ -6,9 +8,9 @@ var StateList = (props) => {
 
   return (
     <div className="state-list">
-      {props.states.map((state, index) => {
-        <StateListEntry key={index} state={state}/>;
-      })
+      {props.states.map((state, index) => (
+        <StateListEntry key={index} state={state}/>
+      ))
       }
     </div>
   );

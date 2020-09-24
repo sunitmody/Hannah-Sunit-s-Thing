@@ -1,4 +1,7 @@
 import data from '../data/exampleStateData.js';
+import Result from './Result.js';
+import Header from './Header.js';
+import StateList from './StateList.js';
 
 class App extends React.Component {
   constructor(props) {
